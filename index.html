@@ -22,45 +22,57 @@
   </head>
   <body>
     <header>
-      <div class="clip">
+      <div class="hero-container">
         <nav>
           <img src="/assets/images/logo-light.svg" alt="Workit White Logo" />
-          <a href="#">Apply for access</a>
+          <a href="#" class="apply-link">Apply for access</a>
         </nav>
         <div class="hero-content">
           <h1>Data <span class="underlined">tailored</span> to your needs.</h1>
           <button>Learn more</button>
-          
         </div>
       </div>
-      <img src="/assets/images/image-hero.webp" class="hero-img" alt="Phone image">
+      <img
+        src="/assets/images/image-hero.webp"
+        class="hero-img"
+        alt="Phone image"
+      />
     </header>
 
     <main>
-      <section>
-        <div>
-          <span>1</span>
+      <section class="product-benefits">
+        <div class="benefit-card">
+          <div>
+            <span class="benefit-card__number">1</span>
+          </div>
+
           <h2>Actionable insights</h2>
-          <p>
+          <p class="benefit-card__text">
             Optimize your products, improve customer satisfaction and stay ahead
             of the competition with our product data analytics.
           </p>
         </div>
 
-        <div>
-          <span>2</span>
+        <div class="benefit-card">
+          <div>
+            <span class="benefit-card__number">2</span>
+          </div>
+
           <h2>Data-driven decisions</h2>
-          <p>
+          <p class="benefit-card__text">
             Make data-driven decisions with our product data analytics. Our
             AI-generated reports help you unlock insights hidden in your product
             data.
           </p>
         </div>
 
-        <div>
-          <span>3</span>
+        <div class="benefit-card">
+          <div>
+            <span class="benefit-card__number">3</span>
+          </div>
+
           <h2>Always affordable</h2>
-          <p>
+          <p class="benefit-card__text">
             Always affordable pricing that scales with your business. Get
             top-quality product data analytics services without hidden costs or
             unexpected fees.
@@ -68,13 +80,17 @@
         </div>
       </section>
 
-      <section>
-        <!-- <img
-          src="/assets/images/image-founder.webp"
-          alt="Image of Workit Founder"
-        /> -->
-        <div>
-          <h2>Be the first to test</h2>
+      <section class="founder-section">
+        <div class="founder-img-container">
+          <img
+            src="/assets/images/image-founder.webp"
+            alt="Image of Workit Founder"
+            class="founder-img"
+          />
+        </div>
+
+        <div class="cta-card">
+          <h3>Be the first to test</h3>
           <p>
             Hi, I'm Louis Graham, the founder of the company. Book a demo call
             with me to become a beta tester for our app and kickstart your
@@ -87,11 +103,21 @@
     </main>
 
     <footer>
-      <img src="assets/images/logo-dark.svg" alt="Workit dark logo" />
-      <div>
-        <img src="assets/images/icon-facebook.svg" alt="Facebook logo" />
-        <img src="assets/images/icon-twitter.svg" alt="Twitter logo" />
-        <img src="assets/images/icon-instagram.svg" alt="Instagram logo" />
+      <img
+        src="assets/images/logo-dark.svg"
+        class="footer-logo"
+        alt="Workit dark logo"
+      />
+      <div class="social-icons">
+        <a href="#"
+          ><img src="assets/images/icon-facebook.svg" alt="Facebook logo"
+        /></a>
+        <a href="#"
+          ><img src="assets/images/icon-twitter.svg" alt="Twitter logo"
+        /></a>
+        <a href="#"
+          ><img src="assets/images/icon-instagram.svg" alt="Instagram logo"
+        /></a>
       </div>
     </footer>
   </body>

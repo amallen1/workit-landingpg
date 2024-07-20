@@ -5,6 +5,13 @@
   font-weight: 400;
 }
 
+@font-face {
+  font-family: "ManropeTest";
+  src: local("Manrope"),
+    url("/assets/fonts/manrope/Manrope-VariableFont_wght.ttf");
+  font-weight: 400;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +19,7 @@
 }
 
 :root {
-  --dark-blue: #24053e;
+  --dark-purple: #24053e;
   --neon-green: #44ffa1;
   --dark-gray: #584d62;
   --light-gray: #fcf8ff;
@@ -20,10 +27,7 @@
 }
 
 body {
-  font-family: "Manrope", sans-serif;
-  font-size: 1.125rem;
-  line-height: 32px;
-  position: relative;
+  font-family: "ManropeTest", sans-serif;
 }
 
 h1,
@@ -40,8 +44,10 @@ h1 {
 }
 
 h2 {
-  font-size: 56px;
-  line-height: 64px;
+  font-size: 28px;
+  line-height: 36px;
+  margin-bottom: 1rem;
+  color: var(--dark-purple);
 }
 
 h3 {
@@ -53,9 +59,9 @@ header {
   height: 481px;
 }
 
-.clip {
+.hero-container {
   height: 100%;
-  background-color: var(--dark-blue);
+  background-color: var(--dark-purple);
   clip-path: ellipse(175% 100% at 50% 0%);
   padding: 1rem;
 }
@@ -65,7 +71,7 @@ nav {
   justify-content: space-between;
 }
 
-a {
+.apply-link {
   font-family: "Manrope", sans-serif;
   font-size: 1rem;
   font-weight: 700;
@@ -76,7 +82,7 @@ a {
   border-bottom: 3px solid var(--neon-green);
 }
 
-a:hover {
+.apply-link:hover {
   color: var(--neon-green);
 }
 
@@ -115,5 +121,79 @@ button:hover {
 }
 
 main {
-  padding: 6rem 1rem 1rem 1rem;
+  position: relative;
+  z-index: -1;
+  top: -20px;
+}
+
+p {
+  line-height: 28px;
+}
+
+.product-benefits {
+  background-color: var(--light-gray);
+  padding: 10rem 1rem 1rem 1rem;
+  text-align: center;
+  clip-path: ellipse(250% 100% at 50% 0%);
+}
+
+.benefit-card__number {
+  border: 1px solid var(--dark-purple);
+  height: 48px;
+  width: 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin: 0 auto 1.5rem;
+}
+
+.benefit-card {
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.benefit-card__text {
+  color: var(--dark-gray);
+}
+
+.founder-section {
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.founder-img {
+  width: 100%;
+  position: relative;
+  top: 70px;
+  z-index: -1;
+}
+
+.cta-card {
+  background-color: var(--dark-purple);
+  padding: 2rem;
+  color: var(--white);
+}
+
+.cta-card h3 {
+  margin-bottom: 1rem;
+}
+
+.cta-card p {
+  margin-bottom: 1.5rem;
+}
+
+footer {
+  padding: 4rem 1rem 2rem;
+  text-align: center;
+}
+
+.footer-logo {
+  margin-bottom: 3rem;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  column-gap: 1.5rem;
 }
