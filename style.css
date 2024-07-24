@@ -28,6 +28,7 @@
 
 body {
   font-family: "ManropeTest", sans-serif;
+  position: relative;
 }
 
 h1,
@@ -38,9 +39,10 @@ h3 {
 
 h1 {
   font-size: 50px;
-  line-height: 60px;
+  line-height: 50px;
   color: var(--white);
-  margin-bottom: 2.5rem;
+  margin: 0 auto 2.5rem;
+  max-width: 400px;
 }
 
 h2 {
@@ -52,11 +54,12 @@ h2 {
 
 h3 {
   font-size: 32px;
-  line-height: 40px;
+  line-height: 48px;
 }
 
 header {
   height: 481px;
+  background-color: var(--light-gray);
 }
 
 .hero-container {
@@ -64,6 +67,8 @@ header {
   background-color: var(--dark-purple);
   clip-path: ellipse(175% 100% at 50% 0%);
   padding: 1rem;
+  position: relative;
+  overflow: hidden;
 }
 
 nav {
@@ -93,6 +98,7 @@ nav {
 
 .underlined {
   border-bottom: 3px solid var(--neon-green);
+  display: inline-block;
 }
 
 button {
@@ -113,17 +119,16 @@ button:hover {
 }
 
 .hero-img {
-  width: 320px;
+  width: 300px;
   position: absolute;
   top: 390px;
   left: 50%;
-  transform: translateX(-48%);
+  transform: translateX(-50%);
+  z-index: 100;
 }
 
-main {
-  position: relative;
-  z-index: -1;
-  top: -20px;
+.spiral {
+  display: none;
 }
 
 p {
@@ -155,17 +160,19 @@ p {
 
 .benefit-card__text {
   color: var(--dark-gray);
+  max-width: 400px;
+  margin: 0 auto;
 }
 
 .founder-section {
   text-align: center;
-  padding: 0 1rem;
+  padding: 2.5rem 1rem 1rem;
 }
 
 .founder-img {
-  width: 100%;
+  width: 281px;
   position: relative;
-  top: 70px;
+  top: 60px;
   z-index: -1;
 }
 
@@ -184,7 +191,7 @@ p {
 }
 
 footer {
-  padding: 4rem 1rem 2rem;
+  padding: 4.625rem 1rem 4rem;
   text-align: center;
 }
 
@@ -196,4 +203,123 @@ footer {
   display: flex;
   justify-content: center;
   column-gap: 1.5rem;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0px;
+  font-size: 0.75rem;
+  left: 0px;
+  right: 0px;
+}
+
+.attribution a {
+  color: var(--dark-purple);
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  header {
+    height: 540px;
+  }
+
+  .hero-container {
+    padding: 2rem 2.5rem 0rem;
+  }
+
+  .hero-img {
+    width: 514px;
+    top: 405px;
+  }
+
+  .spiral {
+    display: block;
+    position: absolute;
+    z-index: 50;
+  }
+
+  .spiral.left {
+    top: 11%;
+    left: -29%;
+  }
+
+  .spiral.right {
+    top: 50%;
+    position: absolute;
+    right: -13%;
+  }
+
+  .product-benefits {
+    padding-top: 14rem;
+  }
+
+  .benefit-card {
+    display: flex;
+    align-items: center;
+    padding: 0rem 97px;
+    column-gap: 2rem;
+  }
+
+  .benefit-card__text-container {
+    text-align: left;
+  }
+
+  .benefit-card__text {
+    max-width: 473px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .spiral.left {
+    left: -15%;
+  }
+
+  .spiral.right {
+    right: -5%;
+  }
+}
+
+@media (min-width: 1440px) {
+  h1 {
+    font-size: 80px;
+    line-height: 80px;
+    max-width: 600px;
+  }
+
+  header {
+    height: 730px;
+  }
+
+  .hero-container {
+    clip-path: ellipse(125% 100% at 50% 0%);
+    padding: 60px 165px 0px;
+  }
+
+  .hero-img {
+    width: 757px;
+    top: 480px;
+  }
+
+  .apply-link {
+    font-size: 1.125rem;
+  }
+
+  button {
+    font-size: 1.125rem;
+    padding: 13px 32px 16px;
+  }
+
+  .spiral.left {
+    left: -9%;
+    top: 19%;
+  }
+
+  .spiral.right {
+    right: -3%;
+    top: 45%;
+  }
 }
