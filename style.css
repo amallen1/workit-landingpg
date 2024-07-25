@@ -57,6 +57,10 @@ h3 {
   line-height: 48px;
 }
 
+p {
+  line-height: 28px;
+}
+
 header {
   height: 481px;
   background-color: var(--light-gray);
@@ -131,15 +135,16 @@ button:hover {
   display: none;
 }
 
-p {
-  line-height: 28px;
-}
-
 .product-benefits {
   background-color: var(--light-gray);
-  padding: 10rem 1rem 1rem 1rem;
+  padding: 9rem 1rem 1rem 1rem;
   text-align: center;
   clip-path: ellipse(250% 100% at 50% 0%);
+}
+
+.benefit-card {
+  margin-bottom: 2.5rem;
+  text-align: center;
 }
 
 .benefit-card__number {
@@ -151,11 +156,8 @@ p {
   align-items: center;
   border-radius: 50%;
   margin: 0 auto 1.5rem;
-}
-
-.benefit-card {
-  margin-bottom: 2.5rem;
-  text-align: center;
+  font-family: "Fraunces144pt", sans-serif;
+  font-size: 20px;
 }
 
 .benefit-card__text {
@@ -165,8 +167,24 @@ p {
 }
 
 .founder-section {
-  text-align: center;
+  /* text-align: center; */
   padding: 2.5rem 1rem 1rem;
+
+  /* display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center; */
+
+  max-width: 768px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  margin: 0 auto;
+}
+
+.founder-img-container {
+  /* width: 100%; */
 }
 
 .founder-img {
@@ -180,6 +198,7 @@ p {
   background-color: var(--dark-purple);
   padding: 2rem;
   color: var(--white);
+  max-width: 500px;
 }
 
 .cta-card h3 {
@@ -255,12 +274,14 @@ footer {
 
   .product-benefits {
     padding-top: 14rem;
+    padding-bottom: 3rem;
+    clip-path: ellipse(150% 100% at 50% 0%);
   }
 
   .benefit-card {
     display: flex;
+    justify-content: center;
     align-items: center;
-    padding: 0rem 97px;
     column-gap: 2rem;
   }
 
@@ -270,6 +291,33 @@ footer {
 
   .benefit-card__text {
     max-width: 473px;
+  }
+
+  .cta-card {
+    max-width: 514px;
+    position: absolute;
+    padding: 48px 56px 56px;
+    text-align: left;
+
+    left: 217px;
+    top: 249px;
+  }
+
+  .cta-card h3 {
+    font-size: 48px;
+    line-height: 56px;
+  }
+
+  .founder-section {
+    position: relative;
+    padding: 2.5rem 2.5rem 1rem;
+    align-items: initial;
+    height: 689px;
+  }
+
+  .spiral.bottom {
+    right: 0px;
+    bottom: -26%;
   }
 }
 
@@ -288,6 +336,11 @@ footer {
     font-size: 80px;
     line-height: 80px;
     max-width: 600px;
+  }
+
+  h2 {
+    font-size: 32px;
+    line-height: 40px;
   }
 
   header {
@@ -322,4 +375,18 @@ footer {
     right: -3%;
     top: 45%;
   }
+
+  .product-benefits {
+    display: flex;
+  }
+
+  .benefit-card {
+    flex-direction: column;
+  }
+
+  .benefit-card__text-container {
+    text-align: center;
+  }
+
+  /* add flex on prod benefits, change flex direction to column for benefit card, text align center for text container */
 }
