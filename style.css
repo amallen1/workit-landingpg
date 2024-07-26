@@ -220,6 +220,7 @@ footer {
 
 .social-icons {
   display: flex;
+  align-items: center;
   justify-content: center;
   column-gap: 1.5rem;
 }
@@ -376,8 +377,16 @@ footer {
     top: 45%;
   }
 
+  .hero-img {
+    width: 767px;
+  }
+
   .product-benefits {
     display: flex;
+    padding-top: 17rem;
+    padding-left: 161px;
+    padding-right: 161px;
+    column-gap: 2rem;
   }
 
   .benefit-card {
@@ -388,5 +397,45 @@ footer {
     text-align: center;
   }
 
-  /* add flex on prod benefits, change flex direction to column for benefit card, text align center for text container */
+  .benefit-card__text {
+    font-size: 1.125rem;
+    line-height: 32px;
+  }
+
+  .founder-section {
+    max-width: none;
+    margin: 0 161px;
+  }
+
+  .founder-img {
+    width: 477px;
+  }
+
+  .cta-card {
+    max-width: 730px;
+    font-size: 1.125rem;
+    line-height: 32px;
+    padding: 64px;
+    left: 430px;
+    top: 280px;
+  }
+
+  .cta-card h3 {
+    font-size: 56px;
+    line-height: 64px;
+    margin-bottom: 2rem;
+  }
+
+  .cta-card p {
+    margin-bottom: 2rem;
+  }
+
+  .spiral.bottom {
+    right: 50px;
+    bottom: -15%;
+  }
+
+  footer {
+    padding-top: 6rem;
+  }
 }
