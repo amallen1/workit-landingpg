@@ -6,7 +6,7 @@
 }
 
 @font-face {
-  font-family: "ManropeTest";
+  font-family: "Manrope";
   src: local("Manrope"),
     url("/assets/fonts/manrope/Manrope-VariableFont_wght.ttf");
   font-weight: 400;
@@ -27,7 +27,7 @@
 }
 
 body {
-  font-family: "ManropeTest", sans-serif;
+  font-family: "Manrope", sans-serif;
   position: relative;
 }
 
@@ -70,7 +70,7 @@ header {
   height: 100%;
   background-color: var(--dark-purple);
   clip-path: ellipse(175% 100% at 50% 0%);
-  padding: 1rem;
+  padding: 2rem 1rem 1rem;
   position: relative;
   overflow: hidden;
 }
@@ -96,7 +96,7 @@ nav {
 }
 
 .hero-content {
-  margin-top: 64px;
+  margin-top: 4rem;
   text-align: center;
 }
 
@@ -107,17 +107,17 @@ nav {
 
 button {
   background-color: var(--neon-green);
-  border: none;
+  border: 2px solid var(--neon-green);
   padding: 0.75rem 1.5rem;
   font-family: "Manrope", sans-serif;
   font-weight: 700;
   font-size: 1rem;
   line-height: 32px;
+  letter-spacing: -0.16px;
 }
 
 button:hover {
   background-color: transparent;
-  border: 2px solid var(--neon-green);
   color: var(--neon-green);
   cursor: pointer;
 }
@@ -144,13 +144,12 @@ button:hover {
 
 .benefit-card {
   margin-bottom: 2.5rem;
-  text-align: center;
 }
 
 .benefit-card__number {
   border: 1px solid var(--dark-purple);
-  height: 48px;
-  width: 46px;
+  height: 46px;
+  width: 48px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -167,24 +166,12 @@ button:hover {
 }
 
 .founder-section {
-  /* text-align: center; */
   padding: 2.5rem 1rem 1rem;
-
-  /* display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center; */
-
   max-width: 768px;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
   margin: 0 auto;
-}
-
-.founder-img-container {
-  /* width: 100%; */
 }
 
 .founder-img {
@@ -199,6 +186,7 @@ button:hover {
   padding: 2rem;
   color: var(--white);
   max-width: 500px;
+  text-align: center;
 }
 
 .cta-card h3 {
@@ -223,6 +211,10 @@ footer {
   align-items: center;
   justify-content: center;
   column-gap: 1.5rem;
+}
+
+svg:hover path {
+  fill: var(--dark-purple);
 }
 
 .attribution {
@@ -263,20 +255,23 @@ footer {
   }
 
   .spiral.left {
-    top: 11%;
-    left: -29%;
+    top: 0px;
+    left: 0px;
+    transform: translate(-220px, 70px);
   }
 
   .spiral.right {
-    top: 50%;
     position: absolute;
-    right: -13%;
+    top: 0px;
+    right: 0px;
+    transform: translate(90px, 250px);
   }
 
   .product-benefits {
     padding-top: 14rem;
     padding-bottom: 3rem;
     clip-path: ellipse(150% 100% at 50% 0%);
+    text-align: left;
   }
 
   .benefit-card {
@@ -284,10 +279,6 @@ footer {
     justify-content: center;
     align-items: center;
     column-gap: 2rem;
-  }
-
-  .benefit-card__text-container {
-    text-align: left;
   }
 
   .benefit-card__text {
@@ -322,16 +313,6 @@ footer {
   }
 }
 
-@media (min-width: 1024px) {
-  .spiral.left {
-    left: -15%;
-  }
-
-  .spiral.right {
-    right: -5%;
-  }
-}
-
 @media (min-width: 1440px) {
   h1 {
     font-size: 80px;
@@ -342,6 +323,11 @@ footer {
   h2 {
     font-size: 32px;
     line-height: 40px;
+  }
+
+  p {
+    line-height: 32px;
+    font-size: 1.125rem;
   }
 
   header {
@@ -368,13 +354,11 @@ footer {
   }
 
   .spiral.left {
-    left: -9%;
-    top: 19%;
+    transform: translate(-135px, 116px);
   }
 
   .spiral.right {
-    right: -3%;
-    top: 45%;
+    transform: translate(50px, 314px);
   }
 
   .hero-img {
@@ -383,9 +367,7 @@ footer {
 
   .product-benefits {
     display: flex;
-    padding-top: 17rem;
-    padding-left: 161px;
-    padding-right: 161px;
+    padding: 17rem 161px 3rem;
     column-gap: 2rem;
   }
 
@@ -395,11 +377,6 @@ footer {
 
   .benefit-card__text-container {
     text-align: center;
-  }
-
-  .benefit-card__text {
-    font-size: 1.125rem;
-    line-height: 32px;
   }
 
   .founder-section {
@@ -414,7 +391,6 @@ footer {
   .cta-card {
     max-width: 730px;
     font-size: 1.125rem;
-    line-height: 32px;
     padding: 64px;
     left: 430px;
     top: 280px;
@@ -436,6 +412,6 @@ footer {
   }
 
   footer {
-    padding-top: 6rem;
+    padding-top: 8rem;
   }
 }
