@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [Solution](https://www.frontendmentor.io/solutions/workit-landing-page---htmlcss-1D-lm1Xn0Z)
+- [Live Site](https://tubular-gnome-d2ea0c.netlify.app/)
 
 ## My process
 
